@@ -146,7 +146,7 @@ if(rows.length>=10) fs=15;
 }
 
 async function exportar(){
- const canvas=await html2canvas(document.getElementById('arte'),{scale:2});
+ const canvas=await html2canvas(document.getElementById('arte'),{scale:4});
  const a=document.createElement('a');
  const d=new Date();
  const nome=`oportunidades_${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}.png`;
