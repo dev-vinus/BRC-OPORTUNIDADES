@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Oportunidades</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="container">
+<div class="left">
+<h1>Gerador de Oportunidades</h1>
+
+<div class="card">
+<h3>Quais vagas deseja divulgar?
+<button
+class="ordenar"
+onclick="ordenarAZ()">
+A-Z
+</button>
+
+<button
+class="ordenar"
+onclick="ordenarQtd()">
+QTD
+</button>
+</h3>
+<div id="vagas"></div>
+<button class="btn add" onclick="addVaga()">Adicionar</button>
+<div id="limite" class="msg"></div>
+</div>
+
+<div class="card">
+<h3>Data final para candidatura</h3>
+<input type="date" id="data" onchange="renderArte()">
+</div>
+
+<button class="btn export" onclick="exportar()">EXPORTAR</button>
+</div>
+
+<div class="right">
+<div class="preview-wrap">
+<div id="arte">
+<img src="fundo.png">
+<div class="lista" id="listaArte"></div>
+<div class="dataArte" id="dataArte"></div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
